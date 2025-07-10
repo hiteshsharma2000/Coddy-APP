@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import Loading from "./Loading";
 import { IoArrowBack } from 'react-icons/io5';
@@ -105,12 +105,13 @@ if(loading){
               className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-indigo-400 focus:outline-none transition"
             />
              <div className="text-right mt-1">
-              <a
-                href="/forgot-password"
-                className="text-sm text-indigo-600 hover:underline font-medium"
-              >
+              <Link to='/forgot-password' className="text-sm text-indigo-600 hover:underline font-medium">
+             
+                
+                
                 Forgot Password?
-              </a>
+              
+                </Link>
             </div>
           </div>
 
