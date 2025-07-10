@@ -105,13 +105,11 @@ if(loading){
               className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-indigo-400 focus:outline-none transition"
             />
              <div className="text-right mt-1">
-              <Link to='/forgot-password' className="text-sm text-indigo-600 hover:underline font-medium">
-             
-                
-                
+            
+                <a href="/forgot-password" className="text-sm text-indigo-600 hover:underline font-medium">
+               
                 Forgot Password?
-              
-                </Link>
+          </a>
             </div>
           </div>
 
