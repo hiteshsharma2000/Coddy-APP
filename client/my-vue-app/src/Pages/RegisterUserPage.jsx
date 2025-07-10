@@ -26,7 +26,7 @@ const RegisterPage = () => {
   }, 10000);
  clearTimeout(timeoutId);
     try {
-      let res=await fetch('http://localhost:8080/user/register',{
+      let res=await fetch('https://coddy-app-dl6q.onrender.com/user/register',{
         method:"POST",
         body:JSON.stringify(formData),
          headers: {

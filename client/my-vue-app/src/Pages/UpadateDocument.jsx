@@ -19,7 +19,7 @@ useEffect(() => {
     console.log(token);
     
     try {
-      const res = await fetch(`http://localhost:8080/document/${id}`, {
+      const res = await fetch(`https://coddy-app-dl6q.onrender.com/document/${id}`, {
         method:"POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ useEffect(() => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:8080/document/update/${id}`, {
+      const res = await fetch(`https://coddy-app-dl6q.onrender.com/document/update/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

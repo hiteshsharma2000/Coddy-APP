@@ -34,7 +34,7 @@ const ResetPasswordPage = () => {
         }, 1000);
         return;
       }
-   let res=await fetch(`http://localhost:8080/user/reset-password/${token}`,{
+   let res=await fetch(`https://coddy-app-dl6q.onrender.com/user/reset-password/${token}`,{
       method:"POST",
       body:JSON.stringify({"Password":formData.password}),
       headers: {

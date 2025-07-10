@@ -41,7 +41,7 @@ const token=Cookies.get('token')
   
  setloading(true)
     try {
-      const res = await axios.get('http://localhost:8080/document/my-documents', {
+      const res = await axios.get('https://coddy-app-dl6q.onrender.com/document/my-documents', {
        
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const token=Cookies.get('token')
 if(query==""){
   return 
 }
-    const res = await axios.get(`http://localhost:8080/document/search?q=${query}`, {
+    const res = await axios.get(`https://coddy-app-dl6q.onrender.com/document/search?q=${query}`, {
         headers: {
     "Content-Type": "application/json",
      Authorization:token || "notavailable",

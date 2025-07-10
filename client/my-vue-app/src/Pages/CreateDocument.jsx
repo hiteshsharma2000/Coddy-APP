@@ -28,7 +28,7 @@ setloading(true)
 
 try {
     
-        let res=await fetch('http://localhost:8080/document/create',{
+        let res=await fetch('https://coddy-app-dl6q.onrender.com/document/create',{
             method:"POST",
             body:JSON.stringify(form),
              headers: {

@@ -16,7 +16,7 @@ const ForgotPasswordPage = () => {
   }, 10000);
  clearTimeout(timeoutId);
    try {
-    let res=await fetch('http://localhost:8080/user/forgot-password',{
+    let res=await fetch('https://coddy-app-dl6q.onrender.com/user/forgot-password',{
       method:"POST",
       body:JSON.stringify({Email}),
       headers: {

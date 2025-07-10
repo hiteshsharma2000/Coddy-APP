@@ -29,7 +29,7 @@ const LoginPage = () => {
   }, 10000);
  clearTimeout(timeoutId);
     try {
-      let res=await fetch('http://localhost:8080/user/login',{
+      let res=await fetch('https://coddy-app-dl6q.onrender.com/user/login',{
         method:"POST",
         body:JSON.stringify(formData),
          headers: {
